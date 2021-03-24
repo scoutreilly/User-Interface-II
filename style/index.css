@@ -1,1 +1,120 @@
-/* Add CSS styling here */
+body {
+  height: 100vh;
+  background: radial-gradient(circle,#FBD6FF, white);
+  background-repeat: no-repeat;
+  font-family: 'Lexend Zetta', sans-serif;
+  letter-spacing: .6rem;
+  color: #3F3640;
+}
+
+a {
+  text-decoration: none;
+  color: #7D6B80;
+}
+
+a:hover {
+  animation-name: faded;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes faded {
+  from {color: #7D6B80;}
+  to {color: #3F3640;}
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  padding-left: 60px;
+}
+
+nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 50%;
+}
+
+nav p {
+  padding: 10px 20px;
+}
+
+#hero {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  position: relative;
+}
+
+#hero img {
+  height: 50vh;
+  max-width: 100%;
+  border-radius: 8px;
+  opacity: .7;
+}
+
+#hero h2 {
+  color: #3F3640;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery {
+  /* border: 2px solid green; */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 9px 250px;
+  justify-content: space-between;
+}
+
+.gallery div  {
+  /* border: 2px solid blueviolet; */
+  height: 15vh;
+  width: 15vw;
+}
+
+.gallery img {
+  width: 15vw;
+  height: 13vh;
+}
+
+h3 {
+  font-size: small;
+  margin: 5px auto;
+}
+
+#footer {
+  text-align: center;
+  background-color: #E2C1E6;
+  padding: 50px 10px;
+}
+
+#copyright {
+  font-size: .3rem;
+}
+
+.social {
+  display: flow-root;
+  justify-content: space-evenly;
+  /* border: 2px solid blueviolet; */
+  padding: 30px 100px;
+}
+
+.social img {
+  width: 4vw;
+  height: 4vh;
+}
+
+.social a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
